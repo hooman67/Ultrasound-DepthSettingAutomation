@@ -1,0 +1,22 @@
+******* figure;plot(h_12_3_12_3); seems to give the best results
+
+
+
+1: Number 1 "should be high : 12-16" = the smoothing filter
+
+
+2: Changing number 2 has absolutely no effect at all. 4,3,4,3 and 4,12,4,3 are both exactly the same. 
+
+
+3: Number 3 "should be low 2 is best" it increases the overall intensity/mag which is good but it reduces the difference between peaks which is bad. For example betwee, 4,3,4,3 and 4,3,18,3. It increased the mag of bigger peack by 0.032 and increased the mag of smaller peak by 0.061. So in effect the two peaks got closer together which is not good. 
+It seems to actually increase the maginitude and not decrease. 2.292 Vs 2.263.  0.061, 
+
+4,3,4,3:  P1Mag 7.384, P2Mag 5.092, Diff 2.292
+4,3,18,3: P1Mag 7.416, P2Mag 5.153, Diff 2.263
+4,3,1,3:  P1Mag 11.17, P2Mag 8.834, Diff 2.336
+4,3,2,3:  P1Mag 8.351, P2Mag 6.009, Diff 2.342
+
+As such, 4,3,1,3 performs the best. and number 3 shold be low. But too low it increases the mag so there is a compromise.
+
+
+4. number 4 has absolutely no effect at all. 4,3,4,3 and 4,3,4,12 are both exactly the same. 

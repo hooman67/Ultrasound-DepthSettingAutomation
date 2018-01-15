@@ -1,0 +1,70 @@
+13 bins
+>> lrHsEr(zeros(1310,1)+8,p10_stp_all_cut,all_theta);
+lrHsEr(zeros(1192,1)+8,p12_stp_all_cut,all_theta);
+lrHsEr(zeros(1451,1)+8,p15_stp_all_cut,all_theta);
+
+Testing Set Accuracy: 71.755725
+
+Testing Set Accuracy: 66.107383
+
+Testing Set Accuracy: 2.618884    WHY ?
+>> lrHsEr(zeros(1178,1)+8,p22_stp_all_cut,all_theta);
+
+Testing Set Accuracy: 49.660441
+>> lrHsEr(zeros(1336,1)+8,p30_stp_all_cut,all_theta);
+
+Testing Set Accuracy: 84.580838
+>> 84.58 + 66.1+71.755
+
+ans =
+
+  222.4350
+
+>> 222.4350/3
+
+ans =
+
+   74.1450
+
+>> 222.4350 + 49.66
+
+ans =
+
+  272.0950
+
+>> 272.0950/4
+
+ans =
+
+   68.0238
+
+>> xx = vertcat(p10_stp_all_cut, p12_stp_all_cut);
+>> xx = vertcat(xx, p22_stp_all_cut);
+>> yy = zeros(3680,1) + 8;
+>> X = vertcat(X, xx);
+>> y = vertcat(y,yy);
+>> ex3
+
+Training One-vs-All Logistic Regression...
+Program paused. Press enter to continue.
+
+Training Set Accuracy: 99.873990
+>> lrHsEr(zeros(1336,1)+8,p30_stp_all_cut,all_theta);
+
+Testing Set Accuracy: 96.107784
+>> load('lrAllHsExculindgDepthGreaterThanThirteen_cutAt43Lines.mat')
+>> xx = vertcat(p10_stp_all_cut, p12_stp_all_cut);
+>> xx = vertcat(xx, p30_stp_all_cut);
+>> yy = zeros(3838,1) + 8;
+>> X = vertcat(X, xx);
+y = vertcat(y,yy);
+>> ex3
+
+Training One-vs-All Logistic Regression...
+Program paused. Press enter to continue.
+
+Training Set Accuracy: 99.824163
+>> lrHsEr(zeros(1178,1)+8,p22_stp_all_cut,all_theta);
+
+Testing Set Accuracy: 86.842105
+>> 

@@ -1,0 +1,7 @@
+Hel: Depth 5-13
+Offset  -7,2
+
+Hs: Depth 5-16
+offset -6, 5
+
+classify  -7 to 5 = 13 classes.        Depth = output - 8,                                                    y = label +8

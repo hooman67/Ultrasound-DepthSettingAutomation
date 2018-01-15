@@ -1,0 +1,9 @@
+//Deciding which jason data works the best with the classifier trained on hel and hs only:
+
+SL(sagital Lamina):Testing Set Accuracy: 50.000000
+
+SFJ(Sagittal facet joint): Testing Set Accuracy: 42.857143
+
+SSP(sagittal Spinous Process): Testing Set Accuracy: 0.000000
+
+STP(Sagittal Transverse Process): Testing Set Accuracy: 87.500000
